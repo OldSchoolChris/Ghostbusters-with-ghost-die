@@ -40,15 +40,15 @@
     <div class="sheet-2colrow">
         <div class="sheet-col">
             <div class="sheet-3colrow">
-                <div class="sheet-col"><label>Brains</label></div>
-                <div class="sheet-col"><input type="number" name="attr_brains"><button type='roll' value='&{template:buster} {{name=Brains}}{{die=[[@{brains}]]}} {{check=[[@{brains}d6]]}} {{ghostdie=[[1d6]]}}' name='roll_BrainsCheck' /></div>
+                <div class="sheet-col"><label>Brains</label></div>   
+                <div class="sheet-col"><input type="number" min="1" value="3" name="attr_brains"><button type='roll' value='&{template:buster} {{name=Brains}} {{die=[[@{brains}]]}} {{ghostdie=[[1d6]][GhostDie]}} {{check=[[((@{brains}-1)d6)]]}}' name='roll_BrainsCheck' /></div>
                 <div class="sheet-col">&nbsp;</div>
             </div>
         </div>
         <div class="sheet-col">
             <div class="sheet-3colrow">
                 <div class="sheet-col"><input type="text" name="attr_talent_1" class="sheet-talent" placeholder="Talent name"></div>
-                <div class="sheet-col"><input type="number" name="attr_talent_1_val"><button type='roll' value='&{template:buster} {{name=@{talent_1}}} {{die=[[@{talent_1_val}]]}} {{check=[[@{talent_1_val}d6]]}}  {{ghostdie=[[1d6]]}}' name='rollTalent1Check' /></div>
+                <div class="sheet-col"><input type="number" name="attr_talent_1_val"><button type='roll' value='&{template:buster} {{name=@{talent_1}}} {{die=[[@{talent_1_val}]]}} {{check=[[(@{talent_1_val}-1)d6]]}}  {{ghostdie=[[1d6]]}}' name='rollTalent1Check' /></div>
                 <div class="sheet-col">&nbsp;</div>
             </div>
         </div>
@@ -58,14 +58,14 @@
         <div class="sheet-col">
             <div class="sheet-3colrow">
                 <div class="sheet-col"><label>Muscles</label></div>
-                <div class="sheet-col"><input type="number" name="attr_muscles"><button type='roll' value='&{template:buster} {{name=Muscles}} {{die=[[@{muscles}]]}} {{check=[[@{muscles}d6]]}}  {{ghostdie=[[1d6]]}}' name='roll_MusclesCheck' /></div>
+                <div class="sheet-col"><input type="number" min="1" value="3" name="attr_muscles"><button type='roll' value='&{template:buster} {{name=Muscles}} {{die=[[@{muscles}]]}} {{ghostdie=[[1d6]]}} {{check=[[((@{muscles}-1)d6)]]}}' name='roll_MusclesCheck' /></div>
                 <div class="sheet-col">&nbsp;</div>
             </div>
         </div>
         <div class="sheet-col">
             <div class="sheet-3colrow">
                 <div class="sheet-col"><input type="text" name="attr_talent_2" class="sheet-talent" placeholder="Talent name"></div>
-                <div class="sheet-col"><input type="number" name="attr_talent_2_val"><button type='roll' value='&{template:buster} {{name=@{talent_2}}} {{die=[[@{talent_2_val}]]}} {{check=[[@{talent_2_val}d6]]}}  {{ghostdie=[[1d6]]}}' name='rollTalent2Check' /></div>
+                <div class="sheet-col"><input type="number" name="attr_talent_2_val"><button type='roll' value='&{template:buster} {{name=@{talent_2}}} {{die=[[@{talent_2_val}]]}} {{check=[[(@{talent_2_val}-1)d6]]}}  {{ghostdie=[[1d6]]}}' name='rollTalent1Check' /></div>
                 <div class="sheet-col">&nbsp;</div>
             </div>
         </div>
@@ -75,14 +75,14 @@
         <div class="sheet-col">
             <div class="sheet-3colrow">
                 <div class="sheet-col"><label>Moves</label></div>
-                <div class="sheet-col"><input type="number" name="attr_moves"><button type='roll' value='&{template:buster} {{name=Moves}} {{die=[[@{moves}]]}} {{check=[[@{moves}d6]]}}  {{ghostdie=[[1d6]]}}' name='roll_MovesCheck' /></div>
+                <div class="sheet-col"><input type="number" min="1" value="3" name="attr_moves"><button type='roll' value='&{template:buster} {{name=Moves}} {{die=[[@{moves}]]}} {{ghostdie=[[1d6]]}} {{check=[[((@{moves}-1)d6)]]}}' name='roll_MovesCheck' /></div>
                 <div class="sheet-col">&nbsp;</div>
             </div>
         </div>
         <div class="sheet-col">
             <div class="sheet-3colrow">
                 <div class="sheet-col"><input type="text" name="attr_talent_3" class="sheet-talent" placeholder="Talent name"></div>
-                <div class="sheet-col"><input type="number" name="attr_talent_3_val"><button type='roll' value='&{template:buster} {{name=@{talent_3}}} {{die=[[@{talent_3_val}]]}} {{check=[[@{talent_3_val}d6]]}}  {{ghostdie=[[1d6]]}}' name='roll_Talent3Check' /></div>
+                <div class="sheet-col"><input type="number" name="attr_talent_3_val"><button type='roll' value='&{template:buster} {{name=@{talent_3}}} {{die=[[@{talent_3_val}]]}} {{check=[[(@{talent_3_val}-1)d6]]}}  {{ghostdie=[[1d6]]}}' name='rollTalent1Check' /></div>
                 <div class="sheet-col">&nbsp;</div>
             </div>
         </div>
@@ -92,14 +92,14 @@
         <div class="sheet-col">
             <div class="sheet-3colrow">
                 <div class="sheet-col"><label>Cool</label></div>
-                <div class="sheet-col"><input type="number" name="attr_cool"><button type='roll' value='&{template:buster} {{name=Cool}} {{die=[[@{cool}]]}} {{check=[[@{cool}d6]]}}  {{ghostdie=[[1d6]]}}' name='roll_CoolCheck' /></div>
+                <div class="sheet-col"><input type="number" min="1" value="3" name="attr_cool"><button type='roll' value='&{template:buster} {{name=Cool}} {{die=[[@{cool}]]}} {{ghostdie=[[1d6]]}} {{check=[[((@{cool}-1)d6)]]}}' name='roll_CoolCheck' /></div>
                 <div class="sheet-col">&nbsp;</div>
             </div>
         </div>
         <div class="sheet-col">
             <div class="sheet-3colrow">
                 <div class="sheet-col"><input type="text" name="attr_talent_4" class="sheet-talent" placeholder="Talent name"></div>
-                <div class="sheet-col"><input type="number" name="attr_talent_4_val"><button type='roll' value='&{template:buster} {{name=@{talent_4}}} {{die=[[@{talent_4_val}]]}} {{check=[[@{talent_4_val}d6]]}}  {{ghostdie=[[1d6]]}}' name='roll_Talent4Check' /></div>
+                <div class="sheet-col"><input type="number" name="attr_talent_4_val"><button type='roll' value='&{template:buster} {{name=@{talent_4}}} {{die=[[@{talent_4_val}]]}} {{check=[[(@{talent_4_val}-1)d6]]}}  {{ghostdie=[[1d6]]}}' name='rollTalent1Check' /></div>
                 <div class="sheet-col">&nbsp;</div>
             </div>
         </div>
@@ -112,7 +112,7 @@
             <label>Brownie Points</label>
         </div>
         <div class="sheet-col">
-            <input type="number" name="attr_character_bp" min="0" max="60" value=60>
+            <input type="number" name="attr_character_bp" min="0" max="60" value=20>
         </div>
         <div class="sheet-col"></div>
         <div class="sheet-col"></div>
@@ -160,29 +160,35 @@
         <tr>
             <td>
                 <div class="sheet-rolltemplate-content">
-                    <h3>{{name}} Check</h3>
-                    <span class="sheet-rolltemplate-die">{{die}}d6 = {{check}}</span>
+                    <h3>{{name}}</h3>
+                    <h5>No. of Dice = {{die}}</h5>
+                    <br>
+                    <h4>
+                    <span class="sheet-rolltemplate-result">Check Roll = {{check}}</span>
                     {{#rollTotal() ghostdie 1}}
-                        <span class="sheet-rolltemplate-result" style="position: relative;">Ghost Die = <img style="height: 3em;position:relative;top:1em;" src="http://i1236.photobucket.com/albums/ff442/Eshombrule/GhostbusterDice/1.png"></span>    
-                    {{/rollTotal() ghostdie 1}} 
+                        <span class="sheet-rolltemplate-ghostdie" style="position: relative;">&nbsp;Ghost Die = <img style="height: 2.25em;position:relative;top:.5em;" src="http://i1236.photobucket.com/albums/ff442/Eshombrule/GhostbusterDice/1.png"></span>    
+                    {{/rollTotal() ghostdie 1}}
+                    
                     {{#rollTotal() ghostdie 2}}
-                        <span class="sheet-rolltemplate-result" style="position: relative;">Ghost Die = <img style="height: 3em;position:relative;top:1em;" src="http://i1236.photobucket.com/albums/ff442/Eshombrule/GhostbusterDice/2.png"></span>    
-                    {{/rollTotal() ghostdie 2}}  
+                        <span class="sheet-rolltemplate-ghostdie" style="position: relative;">&nbsp;Ghost Die = <img style="height: 2.25em;position:relative;top:.5em;" src="http://i1236.photobucket.com/albums/ff442/Eshombrule/GhostbusterDice/2.png"></span>    
+                    {{/rollTotal() ghostdie 2}}
+                    
                     {{#rollTotal() ghostdie 3}}
-                        <span class="sheet-rolltemplate-result" style="position: relative;">Ghost Die = <img style="height: 3em;position:relative;top:1em;" src="http://i1236.photobucket.com/albums/ff442/Eshombrule/GhostbusterDice/3.png"></span>    
+                        <span class="sheet-rolltemplate-ghostdie" style="position: relative;">&nbsp;Ghost Die = <img style="height: 2.25em;position:relative;top:.5em;" src="http://i1236.photobucket.com/albums/ff442/Eshombrule/GhostbusterDice/3.png"></span>    
                     {{/rollTotal() ghostdie 3}}
                     
                     {{#rollTotal() ghostdie 4}}
-                        <span class="sheet-rolltemplate-result" style="position: relative;">Ghost Die = <img style="height: 3em;position:relative;top:1em;" src="http://i1236.photobucket.com/albums/ff442/Eshombrule/GhostbusterDice/4.png"></span>    
+                        <span class="sheet-rolltemplate-ghostdie" style="position: relative;">&nbsp;Ghost Die = <img style="height: 2.25em;position:relative;top:.5em;" src="http://i1236.photobucket.com/albums/ff442/Eshombrule/GhostbusterDice/4.png"></span>    
                     {{/rollTotal() ghostdie 4}}
                     
                     {{#rollTotal() ghostdie 5}}
-                        <span class="sheet-rolltemplate-result" style="position: relative;">Ghost Die = <img style="height: 3em;position:relative;top:1em;" src="http://i1236.photobucket.com/albums/ff442/Eshombrule/GhostbusterDice/5.png"></span>    
+                        <span class="sheet-rolltemplate-ghostdie" style="position: relative;">&nbsp;Ghost Die = <img style="height: 2.25em;position:relative;top:.5em;" src="http://i1236.photobucket.com/albums/ff442/Eshombrule/GhostbusterDice/5.png"></span>    
                     {{/rollTotal() ghostdie 5}}
                     
                     {{#rollTotal() ghostdie 6}}
-                        <span class="sheet-rolltemplate-result" style="position: relative;">Ghost Die = <img style="height: 3em;position:relative;top:1em;" src="http://i1236.photobucket.com/albums/ff442/Eshombrule/GhostbusterDice/GHOST.png"></span>    
-                    {{/rollTotal() ghostdie 6}}
+                        <span class="sheet-rolltemplate-ghostdie" style="position: relative;">&nbsp;Ghost Die = <img style="height: 2.25em;position:relative;top:.5em;" src="http://i1236.photobucket.com/albums/ff442/Eshombrule/GhostbusterDice/GHOST.png"></span>
+                    {{/rollTotal() ghostdie 6}} 
+                    </h4>
                 </div>
             </td>
         </tr>
